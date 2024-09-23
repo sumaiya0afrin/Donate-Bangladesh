@@ -16,15 +16,14 @@ document.getElementById('donate').addEventListener('click', function(event){
             const updateBalance = addAmount + donationAmount;
             document.getElementById('add-balance').innerText = updateBalance;
 
-            document.getElementById('amount').value = '';
             const remainingBalance = initialBalance - donationAmount;
             document.getElementById('initial-balance').innerText = remainingBalance;
             document.getElementById('my_modal_1').showModal();
+            document.getElementById('amount').value = "";
             addDonation(donationAmount, title);
         }else{
             alert('Failed to donate');
         }
-        
     }
     else{
         alert('Insufficient Balance');

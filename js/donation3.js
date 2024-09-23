@@ -19,7 +19,7 @@ document.getElementById('donate3').addEventListener('click', function(event){
             document.getElementById('amount3').value = '';
             const remainingBalance = initialBalance - donationAmount;
             document.getElementById('initial-balance').innerText = remainingBalance;
-            document.getElementById('my_modal_1').showModal();
+            document.getElementById('my_modal_3').showModal();
             addDonation(donationAmount, title);
         }else{
             alert('Failed to donate');
