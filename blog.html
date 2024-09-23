@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate</title>
+    <!-- font CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisyUI and tailwindCSS CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customization  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#B4F461",
+              secondary: "#F9F7F3",
+              desc: "#111111B3",
+            },
+            fontFamily: {
+              lexend: "Lexend",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <!-- header start  -->
+    <header class="sticky top-0 z-10">
+      <div class="bg-secondary pt-4 pb-9">
+        <div class="navbar max-w-screen-xl mx-auto flex-col lg:flex-row">
+          <div class="navbar-start w-auto lg:w-2/4">
+            <a
+              href="index.html"
+              class="btn btn-ghost text-xl bg-primary font-semibold"
+              >Home</a
+            >
+          </div>
+          <div class="navbar-center lg:flex gap-3">
+            <img src="assets/logo.png" alt="" />
+            <h2 class="text-xl font-semibold">Donate Bangladesh</h2>
+          </div>
+          <div class="navbar-end space-x-2 w-auto lg:w-2/4">
+            <img src="assets/coin.png" alt="" />
+            <h4><span id="initial-balance">5500</span> BDT</h4>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header ends -->
+
+    <!-- donation starts -->
+    <main class="max-w-screen-lg mx-auto">
+      <div class="join join-vertical w-full p-3">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-lg lg:text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The DOM represents the whole document as a tree like
+              structure. Every node in the DOM represents an HTML element. It is
+              used for interactive features, manipulate content, validates user input, styling the website dynamically.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-lg lg:text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>There are several methods, but these 5 used the most:
+              <ul>
+                <li>getElementById(id)</li>
+                <li>getElementsByClassName(className)</li>
+                <li>getElementsByTagName(tagName)</li>
+                <li>querySelector(selector)</li>
+                <li>querySelectorAll(selector)</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-lg lg:text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>Event delegation is a technique for managing events effectively. we can add an event listener to a parent element instead of a every single similar element.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-lg lg:text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>By DOM, we can access, add, remove, modify attributes and styles.</p>
+            <p>Manipulate attributes:</p>
+              <ol class="list-disc px-5">
+                <li>getAttribute(attributeName)</li>
+                <li>setAttribute(attributeName, value)</li>
+                <li>removeAttribute(attributeName)</li>
+              </ol>
+            <p>Manipulate styles:</p>
+              <ol class="list-disc px-5">
+                <li>style.color</li>
+                <li>style.fontSize</li>
+                <li>style.backgroundColor</li>
+                <li>classList.add(className)</li>
+                <li>classList.remove(className)</li>
+              </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- donation ends -->
+  </body>
+</html>
