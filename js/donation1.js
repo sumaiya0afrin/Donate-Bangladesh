@@ -11,6 +11,10 @@ document.getElementById('donate').addEventListener('click', function(event){
         return;
     }
 
+    if(inputField === null){
+        alert('please field this form')
+    }
+
     if(initialBalance > 0 && donationAmount <= initialBalance){
         if(donationAmount > 0){
             const updateBalance = addAmount + donationAmount;
